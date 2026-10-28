@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev --turbopack -H 0.0.0.0 -p 38471",
     "build": "next build --turbopack",
-    "start": "next start -H 0.0.0.0 -p 38471",
+    "start": "next start -H 0.0.0.0 -p ${PORT:-38471}",
     "lint": "eslint",
     "check": "tsx scripts/check-learning.ts",
     "seed:memories": "tsx scripts/seed-memories.ts",
